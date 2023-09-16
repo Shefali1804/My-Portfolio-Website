@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shefali's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/0180b10c93.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png" alt="My Name" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p class="main">Web Developer and Programmer</p>
+            <h1>Hi, I'm Shefali Gupta</h1>
+            <p class="intro">I'm deeply passionate about coding and software.<br>
+                Proficiency in a range of programming languages <br>and technologies.
+            </p>
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/shefali-gupta-22981321a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Shefali1804"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/shefaligupta_18?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i
+                        class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/shefali158"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..........................about me.............................. -->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="assets/about_img.png" alt="img">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootstrap, WordPress, Elementor,
+                                React.js, Responsive Design</li>
+                            <li><span>Programming (C, C++ Languages)</span><br>Data Structures and Algorithms, Problem
+                                Solving</li>
+                            <li><span>Graphic Design</span><br></li>
+                            <li><span>Tools Familiar With</span><br>Git, Canva, Figma</li>
+                            <li><span>Technical Support Fundamentals</span><br>How software is built: Coding, scripting,
+                                and programming</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Maharaja Agrasen Institute Of Technology, Delhi</span><br>Bachelor Of Technology
+                                (B.Tech)<br>Electronics and Communication Engineering<br>2020 - 2024</li>
+                            <li><span>DTEA Senior Secondary School, Delhi</span><br>Class 12th, PCMB <br> 2019 - 2020
+                            </li>
+                            <li><span>DTEA Senior Secondary School, Delhi</span><br>Class 10th<br>2017 - 2018</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern</span><br>EDXL Learning and Innovations, Chennai
+                                (Virtual)<br>Aug 2023 - Present</li>
+                            <li><span>Open Source Contributor</span><br>GirlScript Summer Of Code<br>I have contributed
+                                to projects centered around web development, gaining hands-on experience with version
+                                control systems like Git and GitHub. Additionally, I have honed my collaborative skills
+                                by working with diverse groups.<br>May 2023 - Aug 2023</li>
+                            <li><span>Web Development Intern</span><br>Brainovision Solutions India Pvt.Ltd., Hyderabad,
+                                Telangana (Virtual)<br> Sept 2022 - Oct 2022</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I constantly innovate through development and programming in the IT and software field. I have
+                        hands-on experience in Front end. In the realm of front-end development, I thrive on bringing
+                        creativity to life through code. <br>My proficiency in HTML, CSS, JavaScript, and various
+                        front-end frameworks enables me to bridge the gap between design and functionality seamlessly.
+                        <br>I am a dedicated student with a strong command of C and C++ programming languages with a
+                        profound passion for Data Structures and Algorithms (DSA). With a strong foundation in DSA, I
+                        have honed my problem-solving skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- .............................projects............................. -->
+    <div id="project">
+        <div class="container2">
+            <h1 class="subtitle">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/Project1.jpg" alt="project1">
+                    <div class="layer">
+                        <h3>Ecommerce Website</h3>
+                        <p>I designed this fully responsive front end of e-commerce website using HTML, CSS, and
+                            JavaScript.</p>
+                        <a href="https://shefali1804.github.io/ECommerce-Website/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>Project Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Project2.jpg" alt="project2">
+                    <div class="layer">
+                        <h3>The Guided Tours Website</h3>
+                        <p>I designed front end of this guided tours website using Bootstrap and Node.js to help people
+                            explore the world's wonders with the expertly curated guided tours.</p>
+                        <a href="https://shefali1804.github.io/The-Guided-Tours-Website/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>Project Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/Project3.jpg" alt="project3">
+                    <div class="layer">
+                        <h3>Online Flower Services Website</h3>
+                        <p>I designed this fully responsive flower services website using HTML, CSS, and JavaScript.</p>
+                        <a href="https://shefali1804.github.io/Fully-Responsive-Website/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>Project Link</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Shefali1804" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ............................portfolio..............................-->
+    <div id="work">
+        <div class="container3">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list1">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Core Team Member - CodeChef MAIT Chapter</h2>
+                    <p>I am a core team member of the CodeChef MAIT Chapter, specifically serving as a part of the
+                        Graphics Design team.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Member - Google Developer Students Club MAIT</h2>
+                    <p>I am a part of the Google Developer Students Club at my college. As a member of this club, I
+                        participate in various competitions and webinars centered around web development.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Contributor GSSoC'23</h2>
+                    <p>I was a contributor under GSSoC'23 and contributed under this role in projects centered around
+                        Web Development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..........................Courses.......................... -->
+    <div id="courses">
+        <div class="container4">
+            <h1 class="subtitle">Courses/Certifications</h1>
+            <div class="work-list2">
+                <div class="course">
+                    <h3>C++ Programming -Beginner to Advance- Deep Dive in C++</h3>
+                    <p>Udemy</p>
+                    <a href="https://www.udemy.com/certificate/UC-b5325d37-68d7-4c32-aeda-c39db4bce4db/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="course">
+                    <h3>HTML, CSS, and JavaScript for Web Developers</h3>
+                    <p>Coursera</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/75EQ5FREHL82"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="course">
+                    <h3>Innovate India Coding Championship</h3>
+                    <p>Coding Ninjas</p>
+                    <a href="https://students.codingninjas.com/verify/9ae41b075923634a"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="course">
+                    <h3>Technical Support Fundamentals</h3>
+                    <p>Google Career Certifications</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/6WXQD3WL4UL6"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="course">
+                    <h3>Programming Foundations: Data Structures</h3>
+                    <p>linkedin</p>
+                    <a href="https://www.linkedin.com/learning/certificates/f2242a1e4358f683c47d05081878b7b8e8804261ccf494bb7e3b61eaee23656b"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="course">
+                    <h3>Machine Learning for All</h3>
+                    <p>University Of London</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/7DZNH3WZM6CG"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ............................contact............................-->
+    <div id="contact">
+        <div class="container5">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>shefaligupta1804@gmail.com</p>
+                    <div class="socialmedia2">
+                        <a href="https://www.linkedin.com/in/shefali-gupta-22981321a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Shefali1804"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/shefaligupta_18?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/shefali158"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1AL-CsAhQzIkplQuvdDth0i1tk_nyEo3P/view?usp=sharing" class="btn btn2">See My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy. Made with <i class="fa-solid fa-heart"></i> by Shefali Gupta</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
