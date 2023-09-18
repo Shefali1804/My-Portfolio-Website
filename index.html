@@ -16,11 +16,11 @@
             <nav>
                 <img src="assets/logo.png" alt="My Name" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#work">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
@@ -179,32 +179,39 @@
                 <div class="course">
                     <h3>C++ Programming -Beginner to Advance- Deep Dive in C++</h3>
                     <p>Udemy</p>
-                    <a href="https://www.udemy.com/certificate/UC-b5325d37-68d7-4c32-aeda-c39db4bce4db/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://www.udemy.com/certificate/UC-b5325d37-68d7-4c32-aeda-c39db4bce4db/"><i
+                            class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="course">
                     <h3>HTML, CSS, and JavaScript for Web Developers</h3>
                     <p>Coursera</p>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/75EQ5FREHL82"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/75EQ5FREHL82"><i
+                            class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="course">
                     <h3>Innovate India Coding Championship</h3>
                     <p>Coding Ninjas</p>
-                    <a href="https://students.codingninjas.com/verify/9ae41b075923634a"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://students.codingninjas.com/verify/9ae41b075923634a"><i
+                            class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="course">
                     <h3>Technical Support Fundamentals</h3>
                     <p>Google Career Certifications</p>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/6WXQD3WL4UL6"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/6WXQD3WL4UL6"><i
+                            class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="course">
                     <h3>Programming Foundations: Data Structures</h3>
-                    <p>linkedin</p>
-                    <a href="https://www.linkedin.com/learning/certificates/f2242a1e4358f683c47d05081878b7b8e8804261ccf494bb7e3b61eaee23656b"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Linkedin</p>
+                    <a
+                        href="https://www.linkedin.com/learning/certificates/f2242a1e4358f683c47d05081878b7b8e8804261ccf494bb7e3b61eaee23656b"><i
+                            class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div class="course">
                     <h3>Machine Learning for All</h3>
                     <p>University Of London</p>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/7DZNH3WZM6CG"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/7DZNH3WZM6CG"><i
+                            class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -218,21 +225,24 @@
                     <h1 class="subtitle">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i>shefaligupta1804@gmail.com</p>
                     <div class="socialmedia2">
-                        <a href="https://www.linkedin.com/in/shefali-gupta-22981321a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/shefali-gupta-22981321a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Shefali1804"><i class="fa-brands fa-github"></i></a>
                         <a href="https://instagram.com/shefaligupta_18?utm_source=qr&igshid=YzU1NGVlODEzOA=="><i
                                 class="fa-brands fa-square-instagram"></i></a>
                         <a href="https://twitter.com/shefali158"><i class="fa-brands fa-square-twitter"></i></a>
                     </div>
-                    <a href="https://drive.google.com/file/d/1AL-CsAhQzIkplQuvdDth0i1tk_nyEo3P/view?usp=sharing" class="btn btn2">See My Resume</a>
+                    <a href="https://drive.google.com/file/d/1AL-CsAhQzIkplQuvdDth0i1tk_nyEo3P/view?usp=sharing"
+                        class="btn btn2">See My Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -245,6 +255,7 @@
 
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
