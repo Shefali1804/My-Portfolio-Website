@@ -45,6 +45,9 @@ nav {
     width: 230px;
 }
 
+.logo.small{
+    display: none;
+}
 nav ul li {
     display: inline-flex;
     list-style: none;
@@ -569,6 +572,17 @@ i.fa-sharp.fa-solid.fa-bars {
         display: none;
     }
 
+    .container{
+        background-color: #6A5ACD;
+    }
+    
+    .logo.small{
+        display: block;
+    }
+    .logo.large{
+        display: none;
+    }
+    
     .main {
         font-size: 25px;
         /* color: #fff; */
