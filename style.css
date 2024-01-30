@@ -8,27 +8,35 @@
 }
 
 body {
-    background-color: #E6E6FA;
+    background-color: rgb(20,22,35);
     color: #000000;
 }
 
 #header {
+    margin-top: 10px;
     width: 100%;
-    height: 100vh;
-    background-image: url(assets/Bg.png);
-    background-size: auto 100%;
-    background-position: right center;
+    height: 80vh;
+    /* background-image: url(assets/Bg.png); */
+    background-size: auto 70%;
+    background-position: right;
     background-repeat: no-repeat;
 }
 
+.header-text{
+    background-image: url(assets/Bg.png);
+    width: 92%;
+    background-size: auto 90%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
 html {
     scroll-behavior: smooth;
 }
 
 .container {
     padding: 20px 10%;
-    background-color: #ff004f;
-    position: fixed;
+    /* background-color: #ff004f; */
+    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 2;
@@ -42,7 +50,7 @@ nav {
 }
 
 .logo {
-    width: 230px;
+    width: 250px;
 }
 
 .logo.small{
@@ -51,13 +59,13 @@ nav {
 nav ul li {
     display: inline-flex;
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -65,7 +73,7 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background: #6A5ACD;
+    background: aqua;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -83,24 +91,29 @@ nav ul li a:hover {
 .header-text {
     font-size: 30px;
     padding: 8px 10%;
-    margin-top: 10%;
+    margin-top: 3%;
+}
+
+.header-text p{
+    font-size: 25px;
 }
 
 .header-text h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 20px;
+    color: #fff;
 }
 
 .intro {
     margin-top: 20px;
     font-size: 25px;
-    color: #55498a;
+    color: rgb(117, 117, 117);
 }
 
 .main {
     margin-top: 10%;
     font-size: 35px;
-    color: #6A5ACD;
+    color: aqua;
     font-weight: bold;
 }
 
@@ -113,19 +126,19 @@ nav ul li a:hover {
     font: 30px;
     margin-right: 15px;
     display: inline-block;
-    color: #da3f72;
+    color: aqua;
     transition: transform 0.5s;
 }
 
 .socialmedia a:hover {
-    color: #000000;
-    transform: translateY(-5px);
+    color: #55498a;
+    transform: translateY(-10px);
 }
 
 /* ...............................about me.................................... */
 #about {
     padding: 80px 10%;
-    color: #6A5ACD;
+    color: #d3d3f9;
     margin-top: 8%;
 }
 
@@ -145,7 +158,7 @@ nav ul li a:hover {
 }
 
 .about-col2 {
-    flex-basis: 55%;
+    flex-basis: 35%;
 }
 
 .subtitle {
@@ -156,10 +169,16 @@ nav ul li a:hover {
 
 .about-col2 p {
     margin-top: 10px;
-    font-size: 20px;
-    color: #55498a;
+    font-size: 18px;
+    color: #cecdd4;
+    border: 2px solid;
+    border-radius: 100%;
 }
 
+.about-col1 h1{
+    font-size: 35px;
+    color: #fff;
+}
 .tab-titles {
     display: flex;
     justify-content: space-between;
@@ -168,17 +187,21 @@ nav ul li a:hover {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     position: relative;
 }
 
+.tab-links:hover{
+    transform: scale(0.9);
+    color: white;
+}
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color: #ff004f;
+    background-color: aqua;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -193,11 +216,11 @@ nav ul li a:hover {
     list-style: none;
     margin: 10px 0;
     font-size: 18px;
-    color: #55498a;
+    color: rgb(117, 117, 117);
 }
 
 .tab-contents ul li span {
-    color: #6A5ACD;
+    color: aqua;
     font-weight: bold;
     font-size: 16px;
 }
@@ -206,21 +229,40 @@ nav ul li a:hover {
     display: none;
 }
 
+/* .tab-contents img{
+    float: right;
+    margin: auto;
+} */
+
 .tab-contents.active-tab {
     display: block;
+}
+
+
+.about-col2 img{
+    margin-top: 14%;
+    border: 4px solid white;
+    border-radius: 5000px;
+    transform: scale(0.9);
+    box-shadow: 10px 10px 54px rgba(0, 255, 255, 0.8);
+}
+
+.about-col2 img:hover {
+    color: aqua;
+    transform: translateY(-10px);
 }
 
 /* ............................my projects............................... */
 #project {
     padding: 1px 10%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .work-list img {
@@ -238,9 +280,9 @@ nav ul li a:hover {
 }
 
 #project h1 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: bold;
-    color: #6A5ACD;
+    color: #fff;
     margin-bottom: 8%;
 }
 
@@ -248,7 +290,7 @@ nav ul li a:hover {
     width: 100%;
     /* height: 100%; */
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #103627);
     border-radius: 10px;
     color: #fff;
     position: absolute;
@@ -298,7 +340,8 @@ nav ul li a:hover {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    /* border: 1px solid #ff004f; */
+    background-color: aqua;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -307,19 +350,20 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #ff004f;
+    background-color: #fff;
 }
 
 /* ............................my work............................... */
 #work {
     padding: 1px 10%;
-    margin-top: 5%;
+    margin-top: 2%;
+    box-shadow: 10px 10px 54px rgba(227, 176, 46, 0.1);
 }
 
 #work h1 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: bold;
-    color: #6A5ACD;
+    color: #fff;
     margin-bottom: 8%;
 }
 
@@ -331,48 +375,49 @@ nav ul li a:hover {
 }
 
 .work-list1 div {
-    background-color: #cfcfe9;
+    background-color: #030906;
     padding: 40px;
     border-radius: 10px;
     font-size: 14px;
     font-weight: bold;
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.2s, transform 0.5s;
+    box-shadow: 10px 10px 54px rgba(227, 176, 46, 0.1);
 }
 
 .work-list1 div i {
     font-size: 30px;
     margin-bottom: 30px;
-    color: #6A5ACD;
+    color: aqua;
 }
 
 .work-list1 div h2 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 25px;
-    color: #6A5ACD;
+    color: aqua;
 }
 
 .work-list1 div p {
     font-size: 16px;
-    color: #55498a;
+    color: rgb(117, 117, 117);
 }
 
 .work-list1 div:hover {
-    background-color: #bcbcd5;
-    transform: translateY(-20px);
+    /* background-color: #bcbcd5; */
+    transform: translateY(-80px);
 }
 
 /* ..............................my courses.............................. */
 #courses {
     padding: 1px 10%;
-    margin-top: 10%;
+    margin-top: 8%;
     width: 100%;
 }
 
 #courses h1 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: bold;
-    color: #6A5ACD;
+    color: #fff;
     margin-bottom: 8%;
 }
 
@@ -381,14 +426,14 @@ nav ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .course {
     width: 100%;
     height: 100%;
-    background-color: #55498a;
-    border-radius: 10px;
+    background-color: #030906;
+    border-radius: 40%;
     color: #fff;
     left: 0;
     bottom: 0;
@@ -399,6 +444,10 @@ nav ul li a:hover {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
+     box-shadow: 10px 10px 54px rgba(227, 176, 46, 0.1);
+
+    border: 2px solid rgb(117, 117, 117); 
+    box-sizing: border-box;
 }
 
 .course h3 {
@@ -412,11 +461,11 @@ nav ul li a:hover {
 
 .course a {
     margin-top: 20px;
-    color: #ff004f;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background-color: #fff;
+    background-color: #103627;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -425,13 +474,21 @@ nav ul li a:hover {
 }
 
 .course a:hover {
-    color: #fff;
-    background-color: #da3f72;
+    background-color: rgb(117, 117, 117);
+}
+
+.course h3{
+    color: aqua;
+}
+
+.course p{
+    color: rgb(117, 117, 117);
 }
 
 .course:hover {
-    background-color: #402f65;
-    transform: scale(1.05);
+    /* background-color: aqua; */
+    transform: scale(1.08);
+    box-shadow: 10px 10px 54px rgba(227, 176, 46, 0.1);
 }
 
 
@@ -451,29 +508,29 @@ nav ul li a:hover {
 }
 
 .contact-left h1 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: bold;
-    color: #6A5ACD;
+    color: #fff;
 }
 
 .contact-left p {
     margin-top: 50px;
     font-size: 16px;
-    color: #55498a;
+    color: aqua;
     font-weight: bold;
 }
 
 .contact-left p i {
     font-size: 25px;
     margin-right: 15px;
-    color: #da3f72;
+    color: #fff;
 }
 
 .socialmedia2 {
     margin-top: 30px;
 }
 
-.socialmedia2 a {
+/* .socialmedia2 a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -485,13 +542,26 @@ nav ul li a:hover {
 .socialmedia2 a:hover {
     color: #000000;
     transform: translateY(-5px);
+} */
+
+.socialmedia2 a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    color: aqua;
+    transition: transform 0.5s;
 }
 
+.socialmedia2 a:hover {
+    color: #55498a;
+    transform: translateY(-10px);
+}
 .btn.btn2 {
     display: inline-block;
-    background-color: #ff004f;
+    background-color: aqua;
     padding: 14px 25px;
-    color: #fff;
+    color: #000000;
 }
 
 .btn.btn2:hover {
@@ -514,6 +584,12 @@ form textarea {
     color: #55498a;
     font-size: 16px;
     border-radius: 6px;
+    box-shadow: 10px 10px 54px rgba(227, 176, 46, 0.3);
+}
+
+form input,
+form textarea:hover{
+    
 }
 
 form .btn.btn2 {
@@ -531,7 +607,7 @@ form .btn.btn2 {
     padding: 25px 0;
     font-weight: bold;
     margin-top: 20px;
-    background-color: #55498a;
+    /* background-color: #55498a; */
     color: #fff;
 }
 
@@ -571,28 +647,28 @@ i.fa-sharp.fa-solid.fa-bars {
     i.fa-sharp.fa-solid.fa-bars {
         display: none;
     }
-
-    .container{
-        background-color: #6A5ACD;
-    }
     
-    .logo.small{
-        display: block;
-    }
     .logo.large{
-        display: none;
-    }
-    
-    .main {
-        font-size: 25px;
-        /* color: #fff; */
-        justify-content: center;
+        display: block;
+        width: 50%;
     }
 
-    .intro {
-        font-size: 20px;
-        color: #000000;
+    .header-text p{
+        font-size: 18px;
         justify-content: center;
+        margin-top: -80px;
+    }
+
+    .header-text h1{
+        font-size: 20px;
+        color: #fff;
+        justify-content: center
+    }
+    
+    p.intro{
+        font-size: 15px;
+        margin-top: 50px;
+        justify-content: justify;
     }
 
     .socialmedia {
@@ -613,15 +689,12 @@ i.fa-sharp.fa-solid.fa-bars {
         color: #fff;
     }
 
-    /* nav {
-        z-index: 2; 
-    } */
     nav ul {
-        background-color: #ff004f;
+        background-color: rgb(20,22,35);
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 170px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -640,45 +713,25 @@ i.fa-sharp.fa-solid.fa-bars {
         cursor: pointer;
     }
 
-    .about-col1.about-col2 {
-        flex-basis: 100%;
-    }
-
     #about img {
         position: relative;
-        margin-top: -190px;
+        width: 300%; 
+        height: 45vh;
+        margin-top: 15%; 
     }
-
-    #about img {
-        width: 90%;
-        height: 38vh;
-        margin-bottom: 30px;
-        z-index: -1;
-    }
+    
 
     .about-col1 {
-        margin-bottom: 30px;
+        margin-top: -10px;
         justify-content: center;
         /* z-index: -1; */
     }
 
-    .about-col2 {
-        width: 100%;
+ 
+    .tab-titles {
         margin-top: 10%;
     }
-
-    .about-col2 p {
-        font-size: 18px;
-        width: 190%;
-        justify-content: center;
-    }
-
-    .about-col2 h1 {
-        font-size: 50px;
-        margin: 0;
-        width: 190%;
-        margin-bottom: 15%;
-    }
+   
 
     .tab-links {
         font-size: 20px;
@@ -687,17 +740,19 @@ i.fa-sharp.fa-solid.fa-bars {
         /* z-index: -1; */
     }
 
-    .tab-titles {}
-
-    .tab-contents ul li {
-        font-size: 18px;
+    .tab-contents {
+        
     }
 
-    .tab-contents ul li span {
+    .tab-contents ul li {
         font-size: 16px;
     }
 
-    #header {
+    .tab-contents ul li span {
+        font-size: 14px;
+    }
+
+    .header-text {
         background-image: none;
     }
 
